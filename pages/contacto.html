@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visítanos y Contactonos</title>
+  </head>
+  <body>
+    <header>
+      <img src="../assets/img/coffee-cup-svgrepo-com.svg"
+      width="160"
+      height="50"/>
+      <h1>Origen-Café</h1>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2> Visita Nuestra Restaurante Cafetería</h2>
+      <p> Nos ubicamos en Jirón Carabaya 552, Lima 15001</p>
+
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62423.56021076959!2d-77.06075417987688!3d-12.079770686518852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b7cb32c82b%3A0x2355d505fc223ffa!2sLima%20Caf%C3%A9!5e0!3m2!1ses!2spe!4v1790895146552!5m2!1ses!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"
+        title="Ubicación en el mapa Origen, Lima Café"
+        width="600"
+        height="380"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <p>
+        <strong> Horario de atención:</strong> Lunes a Sábado de <b>7:00 AM</b> a <b>10:00 PM</b>
+      </p>
+      <hr>
+    </section>
+      
+    <section>
+      <h2> Haz tu pedido o Contactános</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend> Datos de Pedido y Contacto</legend>
+
+          <p>
+            <label for="contacto-nombre">Nombre completo:</label>
+            <br>
+            <input type="text" id="contacto-nombre" name="contacto-nombre" required>
+          </p>
+
+          <p>
+            <label for"contacto-email">Correo electrónico:</label>
+            <br>
+            <input type="email" id="contacto-email" name="contacto-email" required>
+          </p>
+
+          <p>
+            <label for="contacto-telefono">Teléfono o WhatsApp (9 dígitos):</label>
+            <br>
+            <input type="tel" id="contacto-telefono" name="telefono" pattern="[0-9]{9}" required> 
+          </p>
+
+          <p> 
+            <label for="contacto-tipo"> Tipo de cliente:</label>
+            <br>
+            <select id="contacto-tipo" name="tipo" required>
+              <option value="">--Seleccione una opción--</option>
+              <option value="nuevo">Cliente Nuevo</option>
+              <option value="frecuente">Cliente frecuente</option>
+              <option value="mayorista">Cliente mayorista</option>
+            </select>
+
+            <br><br>
+          </p>
+
+          <p>
+            <label for="contacto-mensaje">Mensaje o detalle de granos requeridos:</label>
+            <br>
+            <textarea id="contacto-mensaje" name="mensaje" rows="4" required></textarea>
+          </p>
+
+          <button type="submit">
+            Enviar Solicitud
+          </button>
+        </fieldset>
+      </form>
+    </section>
+    </main>
+  </body>
+</html>
